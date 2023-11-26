@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d6e2f0;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 400px;
+  border-radius: 10px;
+  padding: 25px 35px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+main p {
+  font-weight: 700;
+  font-size: 20px;
+  color: #3c4054;
+  margin-bottom: 10px;
+}
+
+main input {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #3c4054;
+  outline: 0;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #7d8da6;
+  margin-bottom: 20px;
+}
+
+main input:focus {
+  border: 2px solid#3c4054;
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+}
+
+main button {
+  width: 100%;
+  min-height: 40px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background: #2c7dfa;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+main button:active {
+  background: radial-gradient(circle, #2c7dfa 50%, #3685ff 50%);
+}
+
+.qr-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#text-output {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: #7d8da6;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+
+@media screen and (max-width: 426px) {
+  main {
+    padding: 20px 30px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  main {
+    padding: 20px 30px;
+    width: 325px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  main {
+    padding: 15px 25px;
+    width: 300px;
+  }
+
+  main p {
+    margin-bottom: 8px;
+  }
+
+  main input {
+    margin-bottom: 8px;
+  }
+}
